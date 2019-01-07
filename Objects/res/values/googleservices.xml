@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="firebase_database_url" translatable="false">https://iranapp-3cd1a.firebaseio.com</string>
+  <string name="gcm_defaultSenderId" translatable="false">398352256784</string>
+  <string name="google_storage_bucket" translatable="false">iranapp-3cd1a.appspot.com</string>
+  <string name="google_app_id" translatable="false">1:398352256784:android:6df79fe7dce357f1</string>
+  <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBaDPl92YhgHDEDAXX6NhbWjwJ6iiPXvHQ</string>
+  <string name="google_api_key" translatable="false">AIzaSyBaDPl92YhgHDEDAXX6NhbWjwJ6iiPXvHQ</string>
+  <string name="default_web_client_id" translatable="false">398352256784-d1m3qb6ai5q8vd3ri8l5bi1h5o8f5d0b.apps.googleusercontent.com</string>
+</resources>

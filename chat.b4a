@@ -1,0 +1,172 @@
+﻿Build1=Default,com.iranapp.chat
+File1=darklarch_personal_use.ttf
+File10=happy.png
+File11=icomoon.ttf
+File12=icontexto_emoticons_14.png
+File13=iransans.ttf
+File14=login-system-icon-13.png
+File15=logo.jpg
+File16=notify.mp3
+File17=send.mp3
+File2=data.sqlite
+File3=frmcontacts.bal
+File4=frmmain.bal
+File5=frmmessagelist.bal
+File6=frmprofile.bal
+File7=frmtemplate_contacts.bal
+File8=frmtemplate_message.bal
+File9=frmverify.bal
+FileGroup1=Default Group
+FileGroup10=Default Group
+FileGroup11=Default Group
+FileGroup12=Default Group
+FileGroup13=Default Group
+FileGroup14=Default Group
+FileGroup15=Default Group
+FileGroup16=Default Group
+FileGroup17=Default Group
+FileGroup2=Default Group
+FileGroup3=Default Group
+FileGroup4=Default Group
+FileGroup5=Default Group
+FileGroup6=Default Group
+FileGroup7=Default Group
+FileGroup8=Default Group
+FileGroup9=Default Group
+Group=Default Group
+IconFile=
+Library1=core
+Library10=stringutils
+Library11=rspopupmenu
+Library12=ime
+Library13=json
+Library14=http
+Library15=viewanimations
+Library16=id
+Library17=contentresolver
+Library18=ultimatelistview
+Library19=aes
+Library2=firebasenotifications
+Library20=checksignature
+Library21=conversion
+Library3=phone
+Library4=preferences
+Library5=httputils2
+Library6=network
+Library7=slidingmenuwrapper
+Library8=reflection
+Library9=sql
+ManifestCode='This code will be applied to the manifest file during compilation.~\n~'You do not need to modify it in most cases.~\n~'See this link for for more information: https://www.b4x.com/forum/showthread.php?p=78136~\n~AddManifestText(~\n~<uses-sdk android:minSdkVersion="5" android:targetSdkVersion="19"/>~\n~<supports-screens android:largeScreens="true" ~\n~    android:normalScreens="true" ~\n~    android:smallScreens="true" ~\n~    android:anyDensity="true"/>)~\n~SetApplicationAttribute(android:theme, "@android:style/Theme.Holo.Light")~\n~SetApplicationAttribute(android:icon, "@drawable/icon")~\n~SetApplicationAttribute(android:label, "$LABEL$")~\n~AddPermission(android.permission.SEND_SMS)~\n~AddPermission(android.permission.READ_CONTACTS)~\n~~\n~'************ Google Play Services Base ************~\n~AddApplicationText(~\n~   <activity android:name="com.google.android.gms.common.api.GoogleApiActivity"~\n~  android:theme="@android:style/Theme.Translucent.NoTitleBar"~\n~  android:exported="false"/>~\n~    <meta-data~\n~  android:name="com.google.android.gms.version"~\n~  android:value="@integer/google_play_services_version" />~\n~)~\n~'************ Google Play Services Base (end) ************~\n~~\n~'************ Firebase Base ************~\n~CreateResourceFromFile("google-services", "google-services.json")~\n~AddPermission(android.permission.ACCESS_NETWORK_STATE)~\n~AddPermission(android.permission.INTERNET)~\n~AddPermission(android.permission.WAKE_LOCK)~\n~AddPermission(com.google.android.c2dm.permission.RECEIVE)~\n~AddPermission(${applicationId}.permission.C2D_MESSAGE)~\n~AddManifestText( <permission android:name="${applicationId}.permission.C2D_MESSAGE"~\n~  android:protectionLevel="signature" />)~\n~AddApplicationText(~\n~<receiver~\n~  android:name="com.google.android.gms.measurement.AppMeasurementReceiver"~\n~  android:enabled="true">~\n~  <intent-filter>~\n~  <action android:name="com.google.android.gms.measurement.UPLOAD"/>~\n~  </intent-filter>~\n~  </receiver>~\n~~\n~  <service~\n~  android:name="com.google.android.gms.measurement.AppMeasurementService"~\n~  android:enabled="true"~\n~  android:exported="false"/>~\n~   <provider~\n~  android:authorities="${applicationId}.firebaseinitprovider"~\n~  android:name="com.google.firebase.provider.FirebaseInitProvider"~\n~  android:exported="false"~\n~  android:initOrder="100" />~\n~    <receiver~\n~  android:name="com.google.android.gms.measurement.AppMeasurementReceiver"~\n~  android:enabled="true">~\n~  <intent-filter>~\n~  <action android:name="com.google.android.gms.measurement.UPLOAD"/>~\n~  </intent-filter>~\n~  </receiver>~\n~~\n~  <service~\n~  android:name="com.google.android.gms.measurement.AppMeasurementService"~\n~  android:enabled="true"~\n~  android:exported="false"/>~\n~   <receiver~\n~  android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"~\n~  android:exported="true"~\n~  android:permission="com.google.android.c2dm.permission.SEND" >~\n~  <intent-filter>~\n~  <action android:name="com.google.android.c2dm.intent.RECEIVE" />~\n~  <action android:name="com.google.android.c2dm.intent.REGISTRATION" />~\n~  <category android:name="${applicationId}" />~\n~  </intent-filter>~\n~  </receiver>~\n~    <receiver~\n~  android:name="com.google.firebase.iid.FirebaseInstanceIdInternalReceiver"~\n~  android:exported="false" />~\n~~\n~~\n~  <service~\n~  android:name="com.google.firebase.iid.FirebaseInstanceIdService"~\n~  android:exported="true">~\n~  <intent-filter android:priority="-500">~\n~  <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />~\n~  </intent-filter>~\n~  </service>~\n~)~\n~'************ Firebase Base (end) ************~\n~~\n~'************ Firebase Notifications ************~\n~AddApplicationText(~\n~    <service~\n~  android:name="com.google.firebase.messaging.FirebaseMessagingService"~\n~  android:exported="true">~\n~  <intent-filter android:priority="-500">~\n~  <action android:name="com.google.firebase.MESSAGING_EVENT" />~\n~  </intent-filter>~\n~  </service>~\n~   <service android:name="anywheresoftware.b4a.objects.FirebaseNotificationsService">~\n~     <intent-filter>~\n~  <action android:name="com.google.firebase.MESSAGING_EVENT"/>~\n~     </intent-filter>~\n~   </service>~\n~)~\n~'************ Firebase Notifications (end)************~\n~~\n~'************ Firebase Analytics ************~\n~AddApplicationText(~\n~  <receiver~\n~  android:name="com.google.android.gms.measurement.AppMeasurementReceiver"~\n~  android:enabled="true">~\n~  <intent-filter>~\n~  <action android:name="com.google.android.gms.measurement.UPLOAD"/>~\n~  </intent-filter>~\n~  </receiver>~\n~~\n~  <service~\n~  android:name="com.google.android.gms.measurement.AppMeasurementService"~\n~  android:enabled="true"~\n~  android:exported="false"/>~\n~~\n~  <service android:name="com.google.firebase.crash.internal.service.FirebaseCrashReceiverService"~\n~  android:process=":background_crash"/>~\n~~\n~  <service android:name="com.google.firebase.crash.internal.service.FirebaseCrashSenderService"~\n~  android:process=":background_crash"/>~\n~)~\n~'************ Firebase Analytics (end) ************~\n~
+Module1=actListMessages
+Module10=ContactsUtils
+Module11=actProfile
+Module2=actMain
+Module3=actContact
+Module4=Messages
+Module5=SlideMenu
+Module6=FirebaseMessaging
+Module7=UploadFile
+Module8=Starter
+Module9=Library
+NumberOfFiles=17
+NumberOfLibraries=21
+NumberOfModules=11
+Version=8.8
+@EndOfDesignText@
+#Region  Project Attributes 
+	#ApplicationLabel: چت گرام
+	#VersionCode: 1
+	#VersionName: 1.0.0
+	'SupportedOrientations possible values: unspecified, landscape or portrait.
+	#SupportedOrientations: unspecified
+	#CanInstallToExternalStorage: True
+#End Region
+
+#Region  Activity Attributes 
+	#FullScreen: False
+	#IncludeTitle: False
+#End Region
+
+Sub Process_Globals
+
+End Sub
+
+Sub Globals
+	Private txtphone As EditText
+	Private lblphone As Label
+	Private btnsave As Button
+	Dim code As Int
+	Private phone As String
+End Sub
+
+Sub Activity_Create(FirstTime As Boolean)
+	
+	If Library.Manager.GetBoolean2("valid2",False) = True Then
+		Activity.Finish
+		StartActivity(actMain)
+		Return
+	End If
+	
+	Activity.LoadLayout("frmverify")
+	
+	Dim c As ColorDrawable
+	c.Initialize(Colors.White,10)
+	txtphone.Background = c
+	
+End Sub
+
+Sub Activity_Resume
+
+End Sub
+
+Sub Activity_Pause (UserClosed As Boolean)
+
+End Sub
+
+Sub btnsave_Click
+	
+	If btnsave.Tag = "save" Then
+		
+		If Library.CheckInternet = False Then
+			ToastMessageShow("لطفا اینترنت را فعال کنید",False)
+			Return
+		End If
+		
+		If Regex.IsMatch("09\d{9}",txtphone.Text) = False Then
+			ToastMessageShow("شماره موبایل اشتباه است",False)
+			Return
+		End If
+		
+		code = Rnd(1111,99999)
+		Msgbox("کد فعالسازی : " & code,"alert")
+	
+		Dim sms As PhoneSms
+		sms.Send(txtphone.Text,"کد فعالسازی ایرانگرام " & CRLF & code)
+		
+		lblphone.Text = "کد فعالسازی را جهت تایید وارد کنید"
+		btnsave.Text = "فعالسازی"
+		btnsave.Tag = "verify"
+		phone = txtphone.Text
+		txtphone.Text = ""
+		
+	Else
+		
+		If Regex.IsMatch("\d{4,5}",txtphone.Text) = False Then
+			ToastMessageShow("کد فعالسازی اشتباه است",False)
+			Return
+		End If
+		
+		If code = txtphone.Text Then
+			
+			Library.Manager.SetBoolean("valid2",True)
+			Library.Manager.SetString("id",phone)
+			CallSubDelayed2(FirebaseMessaging,"SubscribeToTopics",phone)
+			
+			Activity.Finish
+			StartActivity(actMain)
+
+		End If
+		
+	End If
+	
+End Sub

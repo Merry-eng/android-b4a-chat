@@ -1,0 +1,93 @@
+{
+  "project_info": {
+    "project_number": "398352256784",
+    "firebase_url": "https://iranapp-3cd1a.firebaseio.com",
+    "project_id": "iranapp-3cd1a",
+    "storage_bucket": "iranapp-3cd1a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:398352256784:android:e0ce2f0d6f8346f4",
+        "android_client_info": {
+          "package_name": "com.iranapp.org"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "398352256784-d1m3qb6ai5q8vd3ri8l5bi1h5o8f5d0b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBaDPl92YhgHDEDAXX6NhbWjwJ6iiPXvHQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:398352256784:android:6df79fe7dce357f1",
+        "android_client_info": {
+          "package_name": "com.iranapp.chat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "398352256784-rf83c02fg90cnlt8k4qgtpg4hrvrddgq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.iranapp.chat",
+            "certificate_hash": "391e6cc85559b93587b98095f497f879c62a8512"
+          }
+        },
+        {
+          "client_id": "398352256784-d1m3qb6ai5q8vd3ri8l5bi1h5o8f5d0b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBaDPl92YhgHDEDAXX6NhbWjwJ6iiPXvHQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "398352256784-b687kf5avfc4eabk73jp6003j58an2b5.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "ir.faceteb.iranapp"
+              }
+            },
+            {
+              "client_id": "398352256784-d1m3qb6ai5q8vd3ri8l5bi1h5o8f5d0b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
